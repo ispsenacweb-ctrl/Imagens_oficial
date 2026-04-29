@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Cafeteria Grão Dourado</title>
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="style.css">
+   <style>
+    .container-flex {
+        display: flex;
+        align-items: stretch;
+        /* REDUZA ESTE VALOR: controla a distância entre a imagem e o texto */
+        gap: 10px; 
+        width: 100%;
+    }
+
+    .sidebar-left {
+        flex: 0 0 80%; 
+        position: relative;
+    }
+
+    .galeria {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        transform: translateY(-30px); 
+    }
+
+    .galeria img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 8px;
+    }
+
+    .conteudo-texto {
+        flex: 1;
+        /* REDUZA OU REMOVA O PADDING: elimina o espaço interno à esquerda do texto */
+        padding: 10px 0 10px 5px; 
+    }
+    
+    .conteudo-texto h2, .conteudo-texto p {
+        margin-left: 0; /* Garante que não há margens extras no texto */
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Cabeçalho unificado -->
+        <header>
+            <h1>Cafeteria Grão Dourado</h1>
+                    </header>
+
+        <div class="content-wrapper">
+            <!-- Lateral com imagem -->
+            <aside class="sidebar-left">
+                <figure class="galeria">
+                    <img src="imagem cafeteria.png" alt="Ambiente acolhedor da Cafeteria Grão Dourado">
+                </figure>
+            </aside>
+
+            <!-- Conteúdo Principal -->
+            <main>
+                <article>
+                    <section id="historia">
+                        <h2>Nossa História</h2>
+                        <p>A <strong>Grão Dourado</strong> nasceu do desejo de transformar o simples ato de beber café em um ritual de conexão...</p>
+                    </section>
+
+                    <section id="missao">
+                        <h2>Missão e Valores</h2>
+                        <p>Nossa missão é servir mais do que cafeína; entregamos conforto em cada xícara...</p>
+                    </section>
+
+                    <section id="espaco">
+                        <h2>O Espaço</h2>
+                        <p>Cada detalhe da nossa casa foi planejado para ser uma extensão da sua...</p>
+                    </section>
+                </article>
+            </main> 
+        </div>
+
+        <!-- Rodapé organizado -->
+        <footer>
+            <div class="social-links">
+        
+            </div>
+            
+            <address class="footer-info">
+                <p>Rua José de Alencar, 120, Piedade, Jaboatão dos Guararapes - CEP: 54.440-030</p>
+                <small>&copy; 2026 Cafeteria Grão Dourado - Todos os direitos reservados.</small>
+            </address>
+        </footer>
+    </div>
+
+</body>
+</html>

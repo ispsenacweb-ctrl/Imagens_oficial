@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grão Dourado</title>
+
+<style>
+:root {
+  --fundo: #f8f3ed;
+  --card: #ffffff;
+  --marrom: #4b2e2b;
+  --destaque: #c89b6d;
+  --verde: #4b2e2b;
+  --linha: #e6d3c3;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: color #2c1b0e;;
+  color: var(--marrom);
+  display: flex;
+  justify-content: center;
+}
+
+h1{
+     color: #d4af37;
+    margin-bottom: 15px;
+}
+
+h1{
+     color: #d4af37;
+    margin-bottom: 15px;
+}
+
+
+/* CONTAINER */
+.menu-container {
+  width: 100%;
+  max-width: 750px;
+  background: var(--card);
+  padding: 40px;
+  margin: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  animation: fadeIn 0.8s ease;
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  border-bottom: 1px solid var(--linha);
+  padding-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  letter-spacing: 4px;
+}
+
+header p {
+  color: var(--verde);
+  font-size: 14px;
+}
+
+/* TÍTULO SEÇÃO */
+.section-title {
+  margin: 40px 0 20px;
+  font-size: 18px;
+  color: var(--destaque);
+  display: flex;
+  align-items: center;
+}
+
+.section-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--linha);
+  margin-left: 10px;
+}
+
+/* ITEM */
+.menu-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.menu-item:hover {
+  transform: translateX(5px);
+}
+
+/* IMAGEM */
+.item-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid var(--linha);
+  background: #c89b6d;
+}
+
+/* TEXTO */
+.item-details {
+  flex: 1;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-header h3 {
+  margin: 0;
+}
+
+.item-price {
+  color: var(--verde);
+  font-weight: bold;
+}
+
+.item-desc {
+  font-size: 13px;
+  color: #7a5c4d;
+  margin-top: 5px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid var(--linha);
+  padding-top: 20px;
+  font-size: 14px;
+  color: #7a5c4d;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .menu-container {
+    padding: 25px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  .item-img {
+    width: 60px;
+    height: 60px;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="menu-container">
+
+<header>
+  <h1>Grão Dourado</h1>
+  <p>CAFÉ ESPECIAL • AMBIENTE MODERNO</p>
+</header>
+
+<!-- CAFÉS -->
+
+<h2 class="section-title">Menu</h2>
+
+<div class="menu-item">
+  <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" class="item-img">
+  <div class="item-details">
+    <div class="item-header">
+      <h3>Espresso Duplo</h3>
+      <span class="item-price">R$ 9,00</span>
+    </div>
+    <div class="item-desc">Intenso e encorpado, com grãos 100% arábica.</div>
+  </div>
+</div>
+
+<div class="menu-item">
+  <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" class="item-img">
+  <div class="item-details">
+    <div class="item-header">
+      <h3>Cappuccino Real</h3>
+      <span class="item-price">R$ 14,00</span>
+    </div>
+    <div class="item-desc">Espresso com leite vaporizado e toque de cacau.</div>
+  </div>
+</div>
+
+<div class="menu-item">
+  <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096" class="item-img">
+  <div class="item-details">
+    <div class="item-header">
+      <h3>Latte Cremoso</h3>
+      <span class="item-price">R$ 16,00</span>
+    </div>
+    <div class="item-desc">Suave, cremoso e perfeito para qualquer hora.</div>
+  </div>
+</div>
+<div class="menu-item">
+  <img src="padariafanny.jfif" class="item-img">
+  <div class="item-details">
+    <div class="item-header">
+        <h3>Pães, e diversos</h3>
+      <span class="item-price">a partir R$6,00</span>
+    </div>
+    <div class="item-desc">Sonhos, croissants e diversos..</div>
+  </div>
+</div>
+
+
+
+
+
+<!-- FOOTER -->
+
+</div>
+
+</body>
+</html>
